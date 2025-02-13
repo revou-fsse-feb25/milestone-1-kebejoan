@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=1px">
+    <title>Document</title>
+</head>
+<body onload="disableScroll()">
+
+    <script>
+        function disableScroll() {
+            window.scrollTo(0, 0); // Forces the page to stay at the top
+            window.onscroll = function() { window.scrollTo(0, 0); };
+        }
+    </script>
+
+    <footer height="1px">this is only a footer</footer>
+</body>
+</html>
