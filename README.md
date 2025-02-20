@@ -26,3 +26,8 @@ asdf
 6. ### footer [pages/footer.html]
 asdf
 
+feature (and issues)
+- index.html uses 2 iframe-s that divide the page into two. looks good but I don't think it's propper. But hey, I want the sticky footer.
+- index-1.html is the default layouting without sticky footer.
+- h1 might be semanticly incorrect
+- nav might be semanticly incorrect
