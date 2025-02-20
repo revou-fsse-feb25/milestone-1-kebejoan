@@ -29,5 +29,7 @@ asdf
 feature (and issues)
 - index.html uses 2 iframe-s that divide the page into two. looks good but I don't think it's propper. But hey, I want the sticky footer.
 - index-1.html is the default layouting without sticky footer.
+- for the sticky footer to show correctly, footer.html uses noscroll script. asked chatgpt to write a noscroll script to use.
+- form for contact might be semanticly incorrect but I like the look (and the "posting" also hopefully works)
 - h1 might be semanticly incorrect
 - nav might be semanticly incorrect
