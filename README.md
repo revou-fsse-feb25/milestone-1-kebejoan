@@ -33,3 +33,4 @@ feature (and issues)
 - form for contact might be semanticly incorrect but I like the look (and the "posting" also hopefully works)
 - h1 might be semanticly incorrect
 - nav might be semanticly incorrect
+- Vertical responsiveness is still incorrect
