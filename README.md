@@ -34,3 +34,4 @@ feature (and issues)
 - h1 might be semanticly incorrect
 - nav might be semanticly incorrect
 - Vertical responsiveness is still incorrect
+- Horizontal responsiveness still use percentage
