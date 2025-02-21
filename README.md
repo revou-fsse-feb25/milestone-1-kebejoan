@@ -3,7 +3,7 @@ This is the readme file for my portfolio page. In this page I will explain about
 
 To open the deployed page, click [here](https://revou-fsse-feb25.github.io/milestone-1-kebejoan/index.html)
 
-To open the deployed page with sticky (improper use of iframe really), click [here](https://revou-fsse-feb25.github.io/milestone-1-kebejoan/sticky.html)
+To open the deployed page with sticky footer (improper use of iframe really), click [here](https://revou-fsse-feb25.github.io/milestone-1-kebejoan/sticky.html)
 
 >Note: If you have opened it before and a push happened from me, you might want to **right click and reload frame** on the 'body' page to show the content correctly
 
@@ -32,6 +32,7 @@ In this page/html/repo(?) you can navigate to several pages to know me and to re
 - index.html is the default layouting without 'sticky footer'.
 - sticky.html uses 2 iframe-s that divide the page into two. looks good but I don't think it's propper. But hey, I want the 'sticky footer'.
 - for the sticky footer to show correctly, footer.html uses noscroll script. asked chatgpt to write a noscroll script to use.
+- no 'footer' when page not open from sticky.html
 - form for contact might be semanticly incorrect but I like the look (and the "posting" also hopefully works)
 - h1 might be semanticly incorrect
 - nav might be semanticly incorrect
