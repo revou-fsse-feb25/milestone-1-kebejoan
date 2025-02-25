@@ -1,0 +1,60 @@
+body {
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2, #e5e5e5, #d8d8d8, #cbcbcb);
+} 
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    /* border: black 4px solid; */
+    padding: 4px;
+    margin: 4px;
+    align-items: center;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* X, Y, Blur, Spread, Color */
+    border-radius: 8px;
+}
+/* .header-item {
+    border: black 1px solid;
+    padding: 4px;
+    margin: 4px;
+    display: inline-block;
+    text-align: left;
+    width: 150px;
+} */
+
+.main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+} 
+
+.main-nav a {
+    /* border: black 1px solid; */
+    padding: 4px;
+    margin: 4px;
+    display: inline-block;
+    text-align: center;
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    /* border: black 4px solid; */
+    padding: 4px;
+    margin: 4px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* X, Y, Blur, Spread, Color */
+    border-radius: 8px;
+}
+
+.footer-socials a img{
+    width: 20px;
+}
