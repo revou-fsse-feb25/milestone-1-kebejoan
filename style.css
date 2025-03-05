@@ -85,25 +85,44 @@ p {
 /* -- mobile and below -- */
 @media only screen and (max-width: 768px) {
 
-    
-
     body{
-        margin: 8px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    section{
+        padding: 16px;
+        background-color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+        border-radius: 16px;
+    }
+
+    ul{
+        margin:0px;
+        padding:0px;
+    }
+
+    li{
+        margin:0px;
+        padding:0px;
     }
 
     header {
-        /* position: sticky; */
-        /* top: 0; */
         background-color: rgba(255,255,255,0.6);
         backdrop-filter: blur(6px);
-        /* padding: 12px; */
-        /* margin: 8px; */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* X, Y, Blur, Spread, Color */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
         border-radius: 16px;
+    }
+
+    .main-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .main-div-mid {
@@ -226,17 +245,103 @@ p {
         display: none;
     }
 
-    .my-stack{
+    .academic{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /* background-color: white;
+        margin: 12px;
+        border-bottom: 2px solid black;
+    }
+
+    .academic-header{
+        font-family: "Roboto Slab", serif;
+        font-size: 1.6rem;
+        border-bottom: 2px solid black; 
+    }
+
+    .academic div:nth-child(1){
+        order: 1;
+    }
+
+    .academic div:nth-child(2){
+        order: 3;
+    }
+
+    .academic div:nth-child(3){
+        order: 2;
+    }
+
+    .academic-pic {
+        margin: 12px;
+        
+    }
+
+    .academic-pic img{
+        width: 80vw;
+        height: 280px;
+        object-fit:cover;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .work {
+        margin: 12px;
+    }
+
+    .work-header{
+        font-family: "Roboto Slab", serif;
+        font-size: 1.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         padding: 12px;
+    }
+
+    .work-header h2{
+        border-bottom: 2px solid black;
+    }
+
+    .scada {
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .scada-pic {
+        width: 80vw;
+        height: 400px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        margin: 12px;
+        align-items: center;
+    }
+
+    .scada-pic picture{
+        width: 80vw;
+        object-fit:cover;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        align-content: center;
+    }
+
+    .scada-pic picture img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        align-content: center;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0px;
         margin: 0px;
-        margin-top: 12px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-        border-radius: 16px; */
+    }
+
+    .any{
+        /* so that i dont loose the last '}' */
     }
 }
 
@@ -264,6 +369,20 @@ p {
 
     body{
         margin: 0px;
+    }
+
+    section{
+        /* padding: 16px;
+        background-color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+        border-radius: 16px; */
+        filter: grayscale(95%);
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    }
+
+    section:hover {
+        transform: scale(1.005);
+        filter: grayscale(0%);
     }
 
     .main-div{
@@ -306,7 +425,6 @@ p {
         font-size: 1.2rem;
         transition-property: color, font-size;
         transition-duration: 0.5s, 0.5s;
-        
     }
 
     .main-nav a:hover{
@@ -338,15 +456,9 @@ p {
         text-decoration: none;
     }
     
-    /* .hero{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
-    
     .hero{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: minmax(250px, 1fr) 1fr 1fr 1fr;
         grid-template-rows: repeat(2, auto);
         gap: 4px;
         /* flex-direction: column; */
@@ -357,13 +469,6 @@ p {
         margin-top: 12px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
         /* border-radius: 16px; */
-        filter: grayscale(95%);
-        transition-property: filter;
-        transition-duration: 0.5s;
-    }
-
-    .hero:hover{
-        filter: grayscale(20%)
     }
 
     .hero div img{
@@ -388,13 +493,13 @@ p {
         display: flex;
         justify-content: left;
         align-items: flex-end;
-        
-        font-family: "Roboto Slab", serif;
-        font-size: 1.5rem;
     }
 
     .hero-header h1{
         margin: 0px;
+        color: crimson;
+        font-family: "Roboto Slab", serif;
+        font-size: 2.4rem;
     }
 
     .hero-para{
@@ -411,31 +516,22 @@ p {
 
     .who-am-i{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr minmax(300px, 1fr);
         grid-template-rows: repeat(4, auto);
         gap: 16px;
-        
         padding-bottom: 20px;
-        filter: grayscale(95%);
-        transition-property: filter;
-        transition-duration: 0.5s;
         border-bottom: black 2px solid;
-        /* background-color: white;
-        padding: 12px;
-        margin: 0px;
-        margin-top: 12px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
-        border-radius: 16px; */
-        
     }
 
-    .who-am-i:hover{
-        filter: grayscale(20%)
+    .who-am-i-header h1{
+        margin: 0px;
+        color: crimson;
+        font-family: "Roboto Slab", serif;
+        font-size: 2.4rem;
     }
 
     .who-am-i-header{
         grid-column: 1 / span 3;
-
         display: flex;
         align-items: flex-end;
 
@@ -493,6 +589,7 @@ p {
         border-bottom: 2px solid black;
         padding: 12px;
         flex-grow: 2;
+        flex-shrink:1;
         justify-content: center;
         list-style: none;
     }
@@ -502,11 +599,32 @@ p {
         padding: 12px;
         border-bottom: 2px solid black;
         border-right: 2px solid black;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.7rem;
         flex-grow: 1;
+        flex-shrink: 1;
         display: flex;
         justify-content: center;
+    }
+
+    .academic-header h2{
+        margin: 0px;
+        margin: 0px;
+        color: crimson;
+        font-family: "Roboto Slab", serif;
+        font-size: 2.4rem;
+    }
+
+    .academic-pic {
+        flex-grow:1;
+        flex-shrink: 4;
+        
+    }
+
+    .academic-pic img{
+        width: 225px;
+        height: 225px;
+        object-fit: cover;
+        margin: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     .work {
@@ -517,12 +635,16 @@ p {
 
     .work-header{
         font-family: "Roboto Slab", serif;
+        font-size:1.6rem;
     }
 
     .work-header h2{
+        margin: 0px;
+        color: crimson;
+        font-family: "Roboto Slab", serif;
+        font-size: 2.4rem;
         padding-left: 12px;
         border-left: 2px solid black;
-        font-size:1.7rem;
     }
 
     .work-list {
@@ -534,12 +656,70 @@ p {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        font-size: 1.2rem;
     }
 
     .work-list ul{
         padding-left: 12px;
         padding-right: 12px;
     }
+
+    .scada {
+        display: flex;
+        flex-direction: row;
+        /* align-items: center;
+        justify-content: space-around; */
+        padding-bottom: 20px;
+        /* filter: grayscale(95%); */
+        transition-property: filter;
+        transition-duration: 0.5s;
+        border-bottom: black 2px solid;
+        /* width:100%; */
+    }
+    
+    .scada-pic{
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 30vw; 
+    }
+
+    .scada-pic picture img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .scada-pic picture{
+        width:100%;
+    }
+
+    .scada-content{
+        flex-grow: 1;
+        flex-shrink: 2;
+        margin: 8px;
+        padding: 8px;
+    }
+    
+    /* .scada-pic{
+        flex-grow: 5;
+        flex-shrink: 1;
+    }
+
+    .scada-pic picture{
+        width:100%;
+    }
+
+    .scada-pic picture img{
+        width: 100%;
+    }
+
+    .scada-content{
+        flex-grow: 1;
+        flex-shrink: 2;
+        margin: 8px;
+        padding: 8px;
+    } */
 
     .any{
         /* so that i dont loose the last '}' */
