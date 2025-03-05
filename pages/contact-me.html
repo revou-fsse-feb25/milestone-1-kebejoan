@@ -10,106 +10,73 @@
     <title>Reach Me Out! | Faishal Tahsiin FSSE</title>
 </head>
 <body>
-    <table width="100%">
-        <header>
-            <h1 class="kebejoan"><a href="../index.html">.kebejoan</a></h1>
-            <nav class="main-nav">
-                    <a href="../index.html">.home</a>
-                    <a href="../pages/work-academic.html">.work</a>
-                    <a href="../pages/projects.html">.projects</a>
-                    <a href="../pages/contact-me.html">.contact</a>
-            </nav>
-        </header>
-    <!-- <header>
-        <h1>Reach Out to Me🫱</h1>
-        <p>Wether it's a monumental project or just a tech query, I'm up for it!</p>
-    </header> -->
-
+    <header>
+        <h1 class="kebejoan"><a href="../index.html">.kebejoan</a></h1>
+        <nav class="main-nav">
+                <a href="../index.html">.home</a>
+                <a href="../pages/work-academic.html">.work</a>
+                <a href="../pages/projects.html">.projects</a>
+                <a href="../pages/contact-me.html">.contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-pic">
+            <img src="../assets/creator-IKN.jpg" alt="BigBrain">
+        </div>
+        </div>
+        <div class="hero-header">
+            <h1>Reach Out to Me🫱</h1>
+        </div>
+        <div class="hero-para">
+            <p>Wether it's a monumental project or just a tech query, I'm up for it!</p>
+        </div>
+        <br>
+    </section>
     <div class="main-div">
         <div class="main-div-left">
-
+            <!-- empty or for future divider -->
         </div>
         <div class="main-div-mid">
             <main>
-                <table width="100%">
-                    <thead>
-                        <tr>
-                            <th width="25%"></th>
-                            <th width="3%"></th>
-                            <th width="57%"></th>
-                            <th width="15%"></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <form action="backend.com" method="POST">
-                            <tr>
-                            </tr>
-                            <br><br>
-                            <tr>
-                                <td align="right">
-                                    <label for="input-name">Name</label>
-                                </td>
-                                <td align="center">
-                                    :
-                                </td>
-                                <td>
-                                    <input type="text"  id="input-name" name="name-input" placeholder="What's your name" required/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right">
-                                    <label for="input-email">Email</label>
-                                </td>
-                                <td align="center">
-                                    :
-                                </td>
-                                <td>
-                                    <input type="email"  id="input-email" name="email-input" placeholder="What's your email" required/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right">
-                                    <label for="subject-contact">Subject</label>
-                                </td>
-                                <td align="center">
-                                    :
-                                </td>
-                                <td>
-                                    <select name="subject" id="subject-contact">
-                                        <option value="tech-query">Hey I want to ask something technical</option>
-                                        <option value="collab" selected>Let's collaborate on a project</option>
-                                        <option value="vacancy">I have a role for you</option>
-                                        <option value="others">Others - Let's have a drink!</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td align="right">
-                                    <label for="concerns-contact">Your concerns</label>
-                                </td>
-                                <td align="center">
-                                    :
-                                </td>
-                                <td>
-                                    <textarea name="concerns" id="concerns-contact" cols="100" rows="5" required>
-                                    </textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td valign="middle">
-                                    <br>
-                                    <input type="submit" value="submit" id="submit-contact"/>
-                                </td>
-                            </tr>
+                <section>
+                    <div class="contact-container">
+                        <form action="backend.com" method="POST" class=".contact">
+                            <div class="contact-name">
+                                <label for="input-name">Name</label>
+                                <input type="text" id="input-name" name="name-input" placeholder="What's your name" required />
+                            </div>
+                        
+                            <div class="contact-email">
+                                <label for="input-email">Email</label>
+                                <input type="email" id="input-email" name="email-input" placeholder="What's your email" required />
+                            </div>
+                        
+                            <div class="contact-subject">
+                                <label for="subject-contact">Subject</label>
+                                <select name="subject" id="subject-contact" placeholder="Select a subject" required>
+                                    <option value="" disabled selected>Select an option</option>
+                                    <option value="tech-query">Hey I want to ask something technical</option>
+                                    <option value="collab">Let's collaborate on a project</option>
+                                    <option value="vacancy">I have a role for you</option>
+                                    <option value="others">Others - Let's have a drink!</option>
+                                </select>
+                            </div>
+                        
+                            <div class="contact-concern">
+                                <label for="concerns-contact">Your concerns</label>
+                                <textarea name="concerns" id="concerns-contact" required></textarea>
+                            </div>
+                        
+                            <div class="contact-submit">
+                                <input type="submit" value="Submit" id="submit-contact" />
+                            </div>
                         </form>
-                    </tbody>
-                </table>
+                    </div>
+                </section>
             </main>
         </div>
         <div class="main-div-right">
-
+            <!-- empty or for future divider -->
         </div>
     </div>
     <div class="bottom-fade">
