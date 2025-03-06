@@ -27,7 +27,7 @@ Feel free to open and run the project on your local machine!
    ```sh
    code .
 
-.
+_
 
 ## 🔍 Overview
 
@@ -39,7 +39,7 @@ This project was done using HTML and Vanilla CSS. No plug-in or extension or fra
 2.  **About-me/Bio Page** -- Explaining roughly about who I am professionaly
 3.  **Projects Page** -- Explaining some past projects I have contributed in
 4.  **Contact Page** -- A page for user to query up a concern to email
-5.  **Back to Top Button** -- A back to top button for mobile user
+5.  **Back to Top Button** -- A sticky back to top button for mobile user
 6.  **CSS Styling** -- The whole page was styled using CSS which includes:
     1.  **Assymetrical Layouting** - This was done using Flex and Grid display property
     2.  **Custom Fonts** - The whole project is using custom font and is loaded using Google Fonts API(?)
@@ -50,13 +50,18 @@ This project was done using HTML and Vanilla CSS. No plug-in or extension or fra
 
 ## 💦 Issues (or to Improve)
   - In a page where the content is not full vh, footer still not sit at the bottom
-  - Will replace nav menu using a hamburger button when in mobile media query later (need js)
-  - Bug in the carousel button (anchor button not correctly scrolls)
+  - Will replace nav menu using a hamburger button when in mobile media query later (need `js`)
+  - Bug in the carousel button (anchor button not correctly scrolls) (need `js`)
   - I divide the body into 3 divs to make the content only in the middle (instead of using max-width)
-  - In general the base code of CSS and HTML is still a bit of a mess. The CSS is +1000 lines long
+  - In general the base code of CSS and HTML is still a bit of a mess. The CSS is +1000 lines long. Will try to seperate CSS for each page after assignment review
   - Rare usage of ID, and minimum re-use of a class
   - Will change socials icons using `fontawesome`
+<br><br>
 
+<h1 align=center>Thank you for visiting! </h1>
+<br>
+
+### More on the repo:
 ## 📋Project Structure
 This project have 3 main folder (~ the root, pages, assets) along with 4 HTMLs and 1 main CSS file.
 
