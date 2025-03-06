@@ -280,6 +280,98 @@ footer {
     width: 20px;
 }
 
+
+
+
+
+
+.carousel-container {
+    width: 80%;
+    max-width: 800px;
+    overflow: hidden;
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.carousel-container h2 {
+    margin-bottom: 20px;
+    font-family: "Roboto Slab", serif;
+    font-size: 1.8rem; 
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Carousel Container */
+.carousel {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Navigation Buttons */
+.carousel-nav {
+    position: absolute;
+    top: 92%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    scroll-margin-bottom: 800px;
+}
+
+.carousel-nav label {
+    pointer-events: all;
+    background: gray;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    font-size: 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.carousel-nav label:hover {
+    opacity: 1;
+    background: crimson;
+}
+
+
+.car-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+
+
 /* -- mobile and below -- */
 @media only screen and (max-width: 768px) {
 
@@ -560,7 +652,7 @@ footer {
         }
     }
 
-    section{
+    section, .car-flex{
         /* padding: 16px;
         background-color: white;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
@@ -569,7 +661,7 @@ footer {
         transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     }
 
-    section:hover {
+    section:hover , .car-flex:hover{
         transform: scale(1.005);
         filter: grayscale(0%);
     }
