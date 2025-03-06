@@ -2,10 +2,8 @@
 
 ### T1 - Faishal Tahsiin (kebejoan) 😁
 
-<div align="center">
-<video align="right" width="125px" src="assets/spongebob-computer.mp4"></video>
-</div>
 
+<img align="right" width="160px" src="https://media1.tenor.com/m/tWD3GjJcoHgAAAAd/spongebob-computer.gif">
 
 Welcome to the repo of my first ever project! This is a portfolio project that was done to complete the milestone assignment to proceed my 'career' as a Full-Stack Software Engineer. This project was done using vanilla CSS and with minimum interfention of AI (I hope). Using vanilla was meant for me to excercise more on the fundamentals. Feel free to navigate the site. Cheers!
 
