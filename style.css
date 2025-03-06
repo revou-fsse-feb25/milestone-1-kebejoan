@@ -518,14 +518,6 @@ input[type="radio"] {
         font-size: 1.6rem;
     }
 
-    .who-am-i-para1{
-
-    }
-
-    .who-am-i-para2{
-
-    }
-
     .who-am-i-pic{
         display: flex;
         align-items: center;
@@ -649,10 +641,6 @@ input[type="radio"] {
         list-style-type: none;
         padding: 0px;
         margin: 0px;
-    }
-    
-    .any{
-        /* so that i dont loose the last '}' */
     }
 }
 
@@ -1002,7 +990,4 @@ input[type="radio"] {
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     }
 
-    .any{
-        /* so that i dont loose the last '}' */
-    }
 }
